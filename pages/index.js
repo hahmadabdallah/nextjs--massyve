@@ -23,6 +23,7 @@ export default function Home() {
                 <h1>MASSYVE</h1>
                 <h3>Technical Assessment</h3>
                 <button type="button" className="btn btn-primary text-white" onClick={()=>{router.push(`/login`)}}>Login</button>
+   <button type="button" className="btn btn-primary text-white" onClick={()=>{router.push(`/register`)}}>Register</button>
                  </div>
 
             </div>
