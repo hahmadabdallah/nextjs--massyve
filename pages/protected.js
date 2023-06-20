@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
      useEffect(() => {
        const fetchClient = async () => {
          try {
-           const res = await axios.get(`${domain}/authenticate`);
+           const res = await axios.get(`${domain}/api/authenticate`);
            setClient(res.data);
          } catch (err) {
            console.error(err);
