@@ -16,7 +16,7 @@ import { useState } from 'react';
    const formOptions = { resolver: yupResolver(validationSchema) };
    const { register, handleSubmit, formState, reset } = useForm(formOptions);
    const { errors } = formState;
-   console.log(domain);
+   console.log("d",domain);
      const onLogin = async (data) => {
      
        try {
