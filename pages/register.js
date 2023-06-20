@@ -18,7 +18,7 @@ import { useState } from 'react';
      const onRegister = async (data) => {
   
        try {
-         const res = await axios.post(`${domain}/register`, [data.email,data.password]);
+         const res = await axios.post(`${domain}/api/register`, [data.email,data.password]);
          if (res.status === 200) {
            router.push('/login');
          }
