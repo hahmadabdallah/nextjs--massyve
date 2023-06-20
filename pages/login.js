@@ -20,7 +20,7 @@ import { useState } from 'react';
      const onLogin = async (data) => {
      
        try {
-         const res = await axios.post(`${domain}/login`,[data.email,data.password]);
+         const res = await axios.post(`${domain}/api/login`,[data.email,data.password]);
          if (res.status === 200) {
            router.push('/protected');
          }
